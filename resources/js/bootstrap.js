@@ -2,7 +2,7 @@ import _ from 'lodash';
 window._ = _;
 
 
-// import '../../vendor/wire-elements/pro/resources/js/overlay-component.js'
+//@philo
 import '../../vendor/wire-elements/pro/resources/js/overlay-component.js'
 
 /**

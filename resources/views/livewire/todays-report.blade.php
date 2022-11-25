@@ -1,3 +1,4 @@
+<!-- @philo -->
 <x-wire-elements-pro::tailwind.slide-over>
     <x-slot name="title">Demo Action</x-slot>
 
