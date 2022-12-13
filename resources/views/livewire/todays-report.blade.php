@@ -1,4 +1,3 @@
-<!-- @philo -->
 <x-wire-elements-pro::tailwind.slide-over>
     <x-slot name="title">Demo Action</x-slot>
 
@@ -7,8 +6,12 @@
     </div>
 
     <x-slot name="buttons">
-        <button type="button" wire:click="$emit('slide-over.close')" class="inline-flex items-center rounded border border-gray-300 bg-white px-2.5 py-1.5 text-xs font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
-            Continue exploring
-        </button>
+        <x-jet-secondary-button class="mr-2" wire:click="$emit('slide-over.close')" wire:loading.attr="disabled">
+                {{ __('Cancel') }}
+            </x-jet-secondary-button>
+        
+        <x-jet-button wire:click="$emit('slide-over.close')" wire:loading.attr="disabled">
+                {{ __('Save') }}
+        </x-jet-button>
     </x-slot>
 </x-wire-elements-pro::tailwind.slide-over>

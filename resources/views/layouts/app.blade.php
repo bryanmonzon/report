@@ -41,7 +41,6 @@
         @stack('modals')
 
 
-        //@philo
         @livewire('slide-over-pro')
         <!-- @livewire('modal-pro') -->
         @livewireScripts
