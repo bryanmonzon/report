@@ -23,6 +23,8 @@ return new class extends Migration
             $table->string('timezone')->nullable();
             $table->foreignId('current_team_id')->nullable();
             $table->string('profile_photo_path', 2048)->nullable();
+            $table->unsignedTinyInteger('weight_goal')->nullable();
+            $table->decimal('fat_percentage_goal')->nullable();
             $table->timestamps();
         });
     }
