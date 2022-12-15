@@ -42,7 +42,7 @@
 
 
         @livewire('slide-over-pro')
-        <!-- @livewire('modal-pro') -->
+        @livewire('modal-pro')
         @livewireScripts
     </body>
 </html>

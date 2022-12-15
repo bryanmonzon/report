@@ -27,6 +27,8 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'weight_goal',
+        'fat_percentage_goal',
     ];
 
     /**
@@ -58,4 +60,10 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    public function weightLogs()
+    {
+        return $this->hasMany(WeightLog::class);
+    }
+
 }
