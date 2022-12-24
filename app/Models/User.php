@@ -66,4 +66,9 @@ class User extends Authenticatable
         return $this->hasMany(WeightLog::class);
     }
 
+    public function currentWeight()
+    {
+        return static::weightLogs()->latest()->first();      
+    }
+
 }

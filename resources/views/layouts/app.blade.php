@@ -39,7 +39,7 @@
         </div>
 
         @stack('modals')
-
+        @stack('scripts')
 
         @livewire('slide-over-pro')
         @livewire('modal-pro')
