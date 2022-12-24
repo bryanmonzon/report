@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\WeightController;
 use App\Http\Controllers\DashboardController;
 
 /*
@@ -24,4 +25,8 @@ Route::middleware([
     'verified'
 ])->group(function () {
     Route::get('/dashboard', [DashboardController::class, 'show'])->name('dashboard');
+
+    Route::get('/weight', [WeightController::class, 'index'])->name('weight');
 });
+
+

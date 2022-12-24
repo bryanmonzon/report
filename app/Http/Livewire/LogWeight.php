@@ -15,6 +15,7 @@ class LogWeight extends Modal
             'weight' => $this->weight
         ]);
 
+        $this->emit('logAdded');
         $this->close();
     }
 
