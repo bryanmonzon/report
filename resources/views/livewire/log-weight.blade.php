@@ -2,11 +2,11 @@
     <x-slot name="title">Log Weight</x-slot>
 
     <div class="text-sm text-gray-800">
-        
-            <div>
-                <input wire:model="weight" type="text" id="weight" name="weight" placeholder="Enter weight">
-            </div>
-        
+        <div class="col-span-6 sm:col-span-4">
+            <x-jet-label for="weight" value="{{ __('Enter Current Weight') }}" />
+            <x-jet-input id="weight" type="text" class="mt-1 block w-full" wire:model="weight"  />
+            <x-jet-input-error for="weight" class="mt-2" />
+        </div>
     </div>
 
     <x-slot name="buttons">
