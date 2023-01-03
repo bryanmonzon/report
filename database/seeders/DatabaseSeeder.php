@@ -19,7 +19,8 @@ class DatabaseSeeder extends Seeder
         \App\Models\User::factory()->create([
             'name' => 'Bryan Monzon',
             'email' => 'monzonb@gmail.com',
-            'timezone' => 'America/Los_Angeles'
+            'timezone' => 'America/Los_Angeles',
+            'weight_goal' => 160,
         ]);
     }
 }

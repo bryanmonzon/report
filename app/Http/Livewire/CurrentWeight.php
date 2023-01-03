@@ -23,7 +23,7 @@ class CurrentWeight extends Component
     protected function getCurrentWeight()
     {
         return auth()->user()->currentWeight();
-    }
+    }    
 
     public function render()
     {

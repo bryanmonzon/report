@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WeightController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DailyReportController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +28,8 @@ Route::middleware([
     Route::get('/dashboard', [DashboardController::class, 'show'])->name('dashboard');
 
     Route::get('/weight', [WeightController::class, 'index'])->name('weight');
+
+    Route::get('/daily-report/today', [DailyReportController::class, 'show'])->name('daily-report.today');
 });
 
 
